@@ -1,121 +1,36 @@
-# Material Take-Off (MTO) Generator
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Overview
+## Getting Started
 
-The Material Take-Off (MTO) Generator is a web application that automatically extracts piping information from isometric drawings and generates a Material Take-Off (MTO) sheet in Excel format.
+First, run the development server:
 
-Instead of manually reading engineering drawings, this application uses OCR and AI to identify important details such as pipe size, material, valves, elbows, tees, reducers, flanges, and other piping components.
-
-The generated information is then organized into a structured MTO table that can be downloaded as an Excel file.
-
----
-
-## Features
-
-- Upload PDF or image drawings
-- Automatic OCR text extraction using EasyOCR
-- AI-based component extraction using Ollama (LLaVA)
-- Automatic Material Take-Off generation
-- Excel report generation
-- Simple and responsive user interface
-- FastAPI backend with Next.js frontend
-
----
-
-## Tech Stack
-
-### Frontend
-
-- Next.js
-- TypeScript
-- CSS
-
-### Backend
-
-- FastAPI
-- Python
-
-### AI & OCR
-
-- EasyOCR
-- Ollama
-- LLaVA
-
-### Other Libraries
-
-- OpenCV
-- pdf2image
-- OpenPyXL
-- Requests
-
----
-
-## Project Structure
-
-```
-MTO-generation/
-
-│
-├── frontend/
-│   ├── app/
-│   ├── components/
-│   ├── public/
-│   └── styles/
-│
-├── backend/
-│   ├── app.py
-│   ├── ai.py
-│   ├── ocr.py
-│   ├── mto.py
-│   ├── excel.py
-│   ├── uploads/
-│   └── outputs/
-│
-└── README.md
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-## Supported File Formats
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- PDF
-- PNG
-- JPG
-- JPEG
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
----
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Output
+## Learn More
 
-The application provides:
+To learn more about Next.js, take a look at the following resources:
 
-- OCR Extracted Text
-- AI Extracted Data
-- Material Take-Off Table
-- Excel Report
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
----
-## Learning Outcomes
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-This project helped in understanding:
+## Deploy on Vercel
 
-- OCR using EasyOCR
-- AI model integration with Ollama
-- FastAPI backend development
-- Next.js frontend development
-- REST API communication
-- Excel report generation
-- File upload handling
-- Image preprocessing with OpenCV
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
----
-
-## Author
-
-**Gauri**
-
-AI & Machine Learning Enthusiast
-
----
-
-## License
-
-This project is created for educational and learning purposes.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
